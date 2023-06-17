@@ -12,7 +12,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        getSupportActionBar().setTitle("Email App (20SW27)");
+        getSupportActionBar().setTitle("Email App");
         Button startBtn = (Button) findViewById(R.id.sendbttn);
         startBtn.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
@@ -22,8 +22,8 @@ public class MainActivity extends AppCompatActivity {
     }
     protected void sendEmail() {
         Log.i("Send email", "");
-        String[] TO = {"aqsa.isha2002@gmail.com"};
-        String[] CC = {"soomroaqsa337@gmail.com"};
+        String[] TO = {"xyz@gmail.com"};
+        String[] CC = {"abc@gmail.com"};
         Intent emailIntent = new Intent(Intent.ACTION_SEND);
         emailIntent.setData(Uri.parse("mailto:"));
         emailIntent.setType("text/plain");
